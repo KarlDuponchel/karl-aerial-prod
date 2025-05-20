@@ -3,19 +3,72 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #FDF0D5;
+  --secondary: #C1121F;
+  --third: #780000;
+}
+
+@font-face {
+  font-family: 'Hagelo';
+  src: url('/fonts/Hagelo.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Wagen';
+  src: url('/fonts/Wagen.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('/fonts/Unbounded/Unbounded-Light.ttf') format('truetype'); 
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('/fonts/Unbounded/Unbounded-Regular.ttf') format('truetype'); 
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('/fonts/Unbounded/Unbounded-Medium.ttf') format('truetype'); 
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-third: var(--third);
+
+  --text-primary: var(--color-primary)
+  --text-secondary: var(--color-secondary)
+  --text-third: var(--color-third)
+
+  --font-hagelo: "Hagelo", sans-serif;
+  --font-wagen: "Wagen", sans-serif;
+  --font-unbounded: "Unbounded", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #f1f1f1;
+    --primary: #780000;
   }
 }
 

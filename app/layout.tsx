@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import LenisProvider from "@/components/LenisProvider";
 
 export const metadata: Metadata = {
   title: "Karl - Télépilote Professionnel",
@@ -13,10 +14,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body
-        className={`antialiased`}
-      >
-        {children}
+      <body className={`antialiased`}>
+        <LenisProvider>{children}</LenisProvider>
       </body>
     </html>
   );
